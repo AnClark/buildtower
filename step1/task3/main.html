@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="utf-8">
+    <style>
+        
+        /* 布局总控，置放于 layout.css 中 */
+        
+        .main
+        {
+            margin: 30px;
+            padding:20px;
+            background-color: #eee;
+            border-style: solid;
+            border-color: #999;
+            overflow:auto;
+        }
+
+        
+        
+        #col-left,#col-right,#col-center
+        {
+            
+            padding:20px;
+            
+            border-style: solid;
+            border-color: #999;
+        }
+        
+        #col-left,#col-right
+        {
+            height:auto;
+            text-align: center;
+        }        
+        
+
+        #col-left
+        {
+            float:left;
+            background-color:  aquamarine;
+            width:200px;
+        }
+        
+        #col-right
+        {
+            float:right;
+            background-color:  bisque;
+            width:120px;
+            
+            align-self: center;
+        }
+        
+        #col-center
+        {
+            
+            width:auto;
+            background-color:cyan;
+            
+            height:100%;
+            margin:0 350px;
+            padding:20px;
+            
+            overflow:hidden;
+        }
+        
+        .member
+        {
+            height:80px;
+            width:80px;
+            background-color: darkred;
+        }
+        
+        .member_split
+        {
+            height:20px;
+        }
+        
+        
+        /*  外观修饰部分，单独放于 details.css 中 */
+        
+        body
+        {
+            font-family: 微软雅黑,Microsoft YaHei UI,sans-serif;
+        }
+        
+        /*
+        #teamlogo
+        {
+            vertical-align: top;
+        }
+        
+        span
+        {
+            vertical-align: top;
+            font-size: 20px;
+        }
+        */
+        #teamlogo_pic
+        {
+            float:left;
+            margin-right: 15px;
+        }
+        
+        #teamlogo_text
+        {
+            float:right;
+            width:auto;
+            
+            text-align: right;
+            right: 10px;
+            vertical-align: top;
+            font-size:30px;
+        }
+        
+    </style>
+    
+</head>
+
+<body>
+    
+    <div class="main">
+        <div id="col-left">
+            <div id="teamlogo">
+                
+                <image class="member" id="teamlogo_pic"></image>
+                <!--<span>BuildTower</span>-->
+                <!--Build<br/>Tower-->
+                <div id="teamlogo_text">
+                Build<br/>Tower
+                </div>
+            </div>
+            
+        </div>
+
+        
+        <div id="col-right">
+            
+            <image class="member">
+            
+            </image><br />
+            
+            <div class="member_split"></div>
+            
+            <image class="member">
+            
+            </image><br />
+            
+            <div class="member_split"></div>
+            
+            <image class="member">
+            
+            </image><br />
+            
+            <div class="member_split"></div>
+            
+            <image class="member">
+            
+            </image><br />
+            
+            <div class="member_split"></div>
+            
+            
+        </div>
+        
+        <div id="col-center">
+            <div id="teaminfo">
+            这里放置团队的介绍
+            </div>
+        </div>
+        
+    </div>
+    
+    
+</body>
+
+</html>
