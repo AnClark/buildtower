@@ -6,31 +6,38 @@
 <style>
 	div
 	{
-		margin: 30px;
+		
 		border-color : black;
 		border-style : solid;
-		float:left;
+				
+	}
+	
+	#main_content
+	{
+		margin: 50px;	
 	}
 	
 	#left 
 	{
-		position:absolute;
+		
+		float:left;
 		height : 600px;
 		width : 300px;
 	}
 	
 	#right
 	{
-		position:inherit;
+		float:right;
+		
 		height : 600px;
 		width:200px;
 	}
 	
 	#center
 	{
-		position:relative;
-		height:auto;
-		width:auto;	
+		height:600px;
+		width:auto;
+
 	}
 	
 	
@@ -41,9 +48,12 @@
 
 <body>
 
-<div id="left">Left</div>
-<div id="center">Center</div>
+<div class="main_content">
+<div id="left" >Left</div>
 <div id="right">Right</div>
+<div id="center">Center</div>
+</div>
+
 
 </body>
 </html>
