@@ -1,0 +1,72 @@
+        /* 布局总控，置放于 layout.css 中 */
+        
+        .main
+        {
+            margin: 30px;
+            padding:20px;
+            background-color: #eee;
+            border-style: solid;
+            border-color: #999;
+            overflow:auto;
+        }
+
+        
+        
+        #col-left,#col-right,#col-center
+        {
+            
+            padding:20px;
+            
+            border-style: solid;
+            border-color: #999;
+        }
+        
+        #col-left,#col-right
+        {
+            height:auto;
+            text-align: center;
+        }        
+        
+
+        #col-left
+        {
+            float:left;
+            background-color:  aquamarine;
+            width:200px;
+        }
+        
+        #col-right
+        {
+            float:right;
+            background-color:  bisque;
+            width:120px;
+            
+            align-self: center;
+        }
+        
+        #col-center
+        {
+            
+            width:auto;
+            background-color:cyan;
+            
+            height:100%;
+            margin-left: 260px;
+            margin-right: 180px;
+            padding:20px;
+            
+            overflow:hidden;
+        }
+        
+        .member
+        {
+            height:80px;
+            width:80px;
+            background-color: darkred;
+        }
+        
+        .member_split
+        {
+            height:20px;
+        }
+        
