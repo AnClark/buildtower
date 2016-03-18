@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>div + css宽度自适应（液态布局）</title>
+    <style type="text/css">
+		/*Global: Unify height*/
+		/*.wrap_l .wrap_r .wrap_m*/
+		.main
+		{
+			overflow:auto;
+			height:200px;
+		}
+        /*左边栏，设定宽度*/
+        .wrap_l
+        {
+            float: left;
+            width: 150px;
+            border: 1px solid #333;
+        }
+        /*中间栏，宽度auto*/
+        .wrap_m
+        {
+            width: auto;
+            margin: 0 140px 0 150px;
+            border: 1px solid #000;
+			overflow:hidden;
+        }
+        /*右边栏，固定宽度*/
+        .wrap_r
+        {
+            float: right;
+            width: 140px;
+            border: 1px solid #999;
+        }
+        </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="main wrap_l">
+            Left Part<br />
+            Hello<br />
+            Baidu IFE
+        </div>
+        <div class="main wrap_r">
+            Meng Ru<br />
+            AnClark Liu<br />
+            BuildTower Team
+        </div>
+        <div class="main wrap_m">
+            Central Part Here
+        </div>
+    </div>
+</body>
+</html>
